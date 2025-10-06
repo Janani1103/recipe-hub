@@ -1,0 +1,181 @@
+<html>
+<head>
+    <title>Recipe Sharing Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 1em;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+        }
+        
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                       url('images/cover.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 1em;
+        }
+        
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto 2em;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 0.8em 2em;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .btn:hover {
+            background-color: #c0392b;
+        }
+        
+        .featured-recipes {
+            padding: 4em 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .featured-recipes h2 {
+            text-align: center;
+            margin-bottom: 3em;
+            color: #2c3e50;
+        }
+        
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+        }
+        
+        .recipe-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .recipe-card-content {
+            padding: 1.5em;
+        }
+        
+        .recipe-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5em;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            margin-top: 4em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Recipes</h1>
+        <p>Share and discover amazing recipes</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="appetizers.html">Appetizers</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <h1>Welcome to Our Recipe Collection</h1>
+        <p>Discover delicious appetizers and mouth-watering desserts from our curated collection</p>
+        <a href="#featured" class="btn">Explore Recipes</a>
+    </section>
+    
+    <section class="featured-recipes" id="featured">
+        <h2>Featured Recipe Categories</h2>
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <img src="images/Appetizer.jpg" alt="Appetizers">
+                <div class="recipe-card-content">
+                    <h3>Appetizers</h3>
+                    <p>Start your meal with these delicious appetizers that will tantalize your taste buds.</p>
+                    <a href="appetizers.html" class="btn" style="margin-top: 1rem;">View Recipes</a>
+                </div>
+            </div>
+            
+            <div class="recipe-card">
+                <img src="images/dessert.jpg" alt="Desserts">
+                <div class="recipe-card-content">
+                    <h3>Desserts</h3>
+                    <p>End your meal on a sweet note with our collection of delightful dessert recipes.</p>
+                    <a href="desserts.html" class="btn" style="margin-top: 1rem;">View Recipes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Delicious Recipes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
