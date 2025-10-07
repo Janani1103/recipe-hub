@@ -1,0 +1,224 @@
+<html>
+<head>
+    <title>Dessert Recipes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 1em;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+        }
+        
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        
+        .recipe {
+            background: white;
+            border-radius: 10px;
+            padding: 2em;
+            margin-bottom: 3em;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        
+        .recipe-header img {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1em;
+        }
+        
+        .recipe h2 {
+            color: #2c3e50;
+            margin-bottom: 1em;
+        }
+        
+        .ingredients, .steps {
+            margin-bottom: 2em;
+        }
+        
+        .ingredients h3, .steps h3 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+        
+        .ingredients ul, .steps ol {
+            margin-left: 2em;
+        }
+        
+        .ingredients li, .steps li {
+            margin-bottom: 0.5em;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 0.8em 2em;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 2em;
+        }
+        
+        .back-btn:hover {
+            background-color: #2980b9;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            margin-top: 4em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dessert Recipes</h1>
+        <p>Sweet treats to complete your meal</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="appetizers.html">Appetizers</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        
+        <!-- Recipe 1 -->
+        <div class="recipe">
+            <div class="recipe-header">
+                <img src="images/Chocolate Lava Cake.jpg" alt="Chocolate Lava Cake">
+                <h2>Chocolate Lava Cake</h2>
+            </div>
+            
+            <div class="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>½ cup unsalted butter</li>
+                    <li>4 oz semi-sweet chocolate</li>
+                    <li>2 large eggs</li>
+                    <li>2 large egg yolks</li>
+                    <li>¼ cup granulated sugar</li>
+                    <li>Pinch of salt</li>
+                    <li>2 tbsp all-purpose flour</li>
+                    <li>Butter for ramekins</li>
+                    <li>Cocoa powder for dusting</li>
+                    <li>Vanilla ice cream (for serving)</li>
+                </ul>
+            </div>
+            
+            <div class="steps">
+                <h3>Steps</h3>
+                <ol>
+                    <li>Preheat oven to 425°F (220°C)</li>
+                    <li>Butter 4 ramekins and dust with cocoa powder</li>
+                    <li>Melt butter and chocolate in double boiler</li>
+                    <li>In separate bowl, whisk eggs, egg yolks, sugar, and salt until pale</li>
+                    <li>Fold melted chocolate into egg mixture</li>
+                    <li>Sift flour into mixture and fold gently</li>
+                    <li>Divide batter among prepared ramekins</li>
+                    <li>Bake for 12-14 minutes until edges are firm but center is soft</li>
+                    <li>Let cool for 1 minute, then invert onto plates</li>
+                    <li>Serve immediately with vanilla ice cream</li>
+                </ol>
+            </div>
+        </div>
+        
+        <!-- Recipe 2 -->
+        <div class="recipe">
+            <div class="recipe-header">
+                <img src="images/Classic New York Cheesecake.jpeg" alt="Cheesecake">
+                <h2>Classic New York Cheesecake</h2>
+            </div>
+            
+            <div class="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li><strong>For Crust:</strong></li>
+                    <li>2 cups graham cracker crumbs</li>
+                    <li>½ cup unsalted butter, melted</li>
+                    <li>¼ cup granulated sugar</li>
+                    <li><strong>For Filling:</strong></li>
+                    <li>4 packages (8oz each) cream cheese, softened</li>
+                    <li>1¼ cups granulated sugar</li>
+                    <li>1 cup sour cream</li>
+                    <li>1 tsp vanilla extract</li>
+                    <li>4 large eggs</li>
+                    <li>¼ cup all-purpose flour</li>
+                </ul>
+            </div>
+            
+            <div class="steps">
+                <h3>Steps</h3>
+                <ol>
+                    <li>Preheat oven to 325°F (160°C)</li>
+                    <li>Mix crust ingredients and press into 9-inch springform pan</li>
+                    <li>Bake crust for 10 minutes, then cool</li>
+                    <li>Beat cream cheese until smooth</li>
+                    <li>Gradually add sugar, then sour cream and vanilla</li>
+                    <li>Add eggs one at a time, mixing well after each</li>
+                    <li>Mix in flour until just combined</li>
+                    <li>Pour filling over crust and smooth top</li>
+                    <li>Bake for 1 hour 15 minutes until center is almost set</li>
+                    <li>Turn off oven and let cheesecake cool in oven for 1 hour</li>
+                    <li>Refrigerate for at least 4 hours before serving</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Delicious Recipes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
