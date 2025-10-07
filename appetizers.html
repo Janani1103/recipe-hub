@@ -1,0 +1,213 @@
+<html>
+<head>
+    <title>Appetizer Recipes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 1em;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+        }
+        
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        
+        .recipe {
+            background: white;
+            border-radius: 10px;
+            padding: 2em;
+            margin-bottom: 3em;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        
+        .recipe-header img {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1em;
+        }
+        
+        .recipe h2 {
+            color: #2c3e50;
+            margin-bottom: 1em;
+        }
+        
+        .ingredients, .steps {
+            margin-bottom: 2em;
+        }
+        
+        .ingredients h3, .steps h3 {
+            color: #e74c3c;
+            margin-bottom: 1em;
+        }
+        
+        .ingredients ul, .steps ol {
+            margin-left: 2em;
+        }
+        
+        .ingredients li, .steps li {
+            margin-bottom: 0.5em;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 0.8em 2em;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 2em;
+        }
+        
+        .back-btn:hover {
+            background-color: #2980b9;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            margin-top: 4em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Appetizer Recipes</h1>
+        <p>Delicious starters to begin your meal</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="appetizers.html">Appetizers</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        
+        <!-- Recipe 1 -->
+        <div class="recipe">
+            <div class="recipe-header">
+                <img src="images/Bruschetta.jpg" alt="Bruschetta">
+                <h2>Classic Bruschetta</h2>
+            </div>
+            
+            <div class="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>1 baguette, sliced</li>
+                    <li>4 ripe tomatoes, diced</li>
+                    <li>2 cloves garlic, minced</li>
+                    <li>¼ cup fresh basil, chopped</li>
+                    <li>2 tbsp extra virgin olive oil</li>
+                    <li>1 tbsp balsamic vinegar</li>
+                    <li>Salt and pepper to taste</li>
+                    <li>Mozzarella cheese (optional)</li>
+                </ul>
+            </div>
+            
+            <div class="steps">
+                <h3>Steps</h3>
+                <ol>
+                    <li>Preheat oven to 400°F (200°C)</li>
+                    <li>Arrange baguette slices on baking sheet and toast for 5-7 minutes until golden</li>
+                    <li>In a bowl, combine diced tomatoes, garlic, basil, olive oil, and balsamic vinegar</li>
+                    <li>Season with salt and pepper to taste</li>
+                    <li>Rub toasted bread slices with garlic clove</li>
+                    <li>Spoon tomato mixture onto bread slices</li>
+                    <li>Add mozzarella if desired and serve immediately</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="recipe">
+            <div class="recipe-header">
+                <img src="images/Stuffed Mushrooms.jpg" alt="Stuffed Mushrooms">
+                <h2>Garlic Parmesan Stuffed Mushrooms</h2>
+            </div>
+            
+            <div class="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>20 large white mushrooms</li>
+                    <li>2 tbsp olive oil</li>
+                    <li>4 cloves garlic, minced</li>
+                    <li>½ cup cream cheese</li>
+                    <li>¼ cup grated Parmesan cheese</li>
+                    <li>¼ cup breadcrumbs</li>
+                    <li>2 tbsp fresh parsley, chopped</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+            </div>
+            
+            <div class="steps">
+                <h3>Steps</h3>
+                <ol>
+                    <li>Preheat oven to 375°F (190°C)</li>
+                    <li>Clean mushrooms and remove stems</li>
+                    <li>Chop mushroom stems finely</li>
+                    <li>Heat olive oil in pan, sauté garlic and chopped stems for 5 minutes</li>
+                    <li>In a bowl, mix cream cheese, Parmesan, breadcrumbs, parsley, and sautéed mixture</li>
+                    <li>Season with salt and pepper</li>
+                    <li>Stuff mushroom caps with the mixture</li>
+                    <li>Bake for 20-25 minutes until golden brown</li>
+                    <li>Garnish with extra parsley and serve warm</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Delicious Recipes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
